@@ -56,7 +56,7 @@ p{
 .bodyIMG{
   width: 75%;
   height: 75%;
-  border-radius: 50px 50px 50px 50px;
+  border-radius:50px;
 }
 .color-light{
   color:#F0EBE1 ;
@@ -78,14 +78,18 @@ p{
 color:#050D18 ;
 }
 .round{
-  clip-path: ellipse( 50% 40% at 50% 40%);
+  border-radius: 5px;
   width: 100%;
-margin-right: 20px;
-margin-left: 20px;
+  
+}
+.margin-move{
+  margin: 15px;
+  width: 100%;
 }
 .split-3{
-  column-count: 3;
-  margin: 10rem;
+  display: flex;
+  width: 90%;
+  margin: auto;
 }
 .split-3 p{
 text-align: center;
@@ -95,7 +99,9 @@ text-align: center;
   padding: 15px;
 }
 .container{
-  height: 100vh;
+  width: 100%;
+  padding-bottom: 8%;
+
 }
 
 @media screen and (max-width: 1024px){
@@ -113,6 +119,15 @@ text-align: center;
     margin: auto;
   }
   .split-3{
-    column-count: 1;
+    flex-direction: column;
+  }
+  p{
+    font-size: 15px;
+  }
+  .margin-move{
+    margin: 0;
+  }
+  h2{
+    font-size: 70px;
   }
 }
