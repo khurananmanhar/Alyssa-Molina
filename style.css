@@ -85,4 +85,8 @@ p{
     width: 90%;
     border-radius:0px;
   }
+  .width-change{
+    width: 90%;
+    margin: auto;
+  }
 }
