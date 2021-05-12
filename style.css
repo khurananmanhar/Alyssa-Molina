@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Alta;
+  src: url(Alta_regular.otf);
+}  
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Alta';
+  overflow-x: hidden;
+}
+.header{
+    font-family: Helvetica, sans-serif;
+    background: url("https://images.unsplash.com/photo-1591961310354-91ca99664c65?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80") no-repeat center center fixed ;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+h1{
+  font-size: 100px;
+  color: #fff;
+
+}
+h2{
+  font-size:80px ;
+}
+h3{
+  font-size: 28px;
+  color: #fff;
+}
+p{
+  font-size: 25px;
+}
+.vertical {
+  border-left: 6px solid white;
+  height: 100px;
+  margin: 15px;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.bodyIMG{
+  width: 75%;
+  height: 80%;
+  border-radius: 100px 100px 0px 0px;
+}
+.color-light{
+  color:#F0EBE1 ;
+}
+.width-change{
+  width: 60%;
+  margin: auto;
+}
+.split{
+  column-count: 2;
+}
+.bg-dark{
+  background-color: #050D18;
+}
+@media screen and (max-width: 1024px){
+  h1{
+    font-size:40px ;
+  }
+  h3{
+    font-size: 20px;
+  }
+  .split{
+    column-count: 1;
+  }
+  .bodyIMG{
+    width: 90%;
+    border-radius:0px;
+  }
+}
