@@ -55,8 +55,8 @@ p{
 }
 .bodyIMG{
   width: 75%;
-  height: 90%;
-  border-radius: 100px 100px 0px 0px;
+  height: 75%;
+  border-radius: 50px 50px 50px 50px;
 }
 .color-light{
   color:#F0EBE1 ;
@@ -71,6 +71,33 @@ p{
 .bg-dark{
   background-color: #050D18;
 }
+.bg-light{
+  background-color:#F0EBE1;
+}
+.color-dark{
+color:#050D18 ;
+}
+.round{
+  clip-path: ellipse( 50% 40% at 50% 40%);
+  width: 100%;
+margin-right: 20px;
+margin-left: 20px;
+}
+.split-3{
+  column-count: 3;
+  margin: 10rem;
+}
+.split-3 p{
+text-align: center;
+}
+.text-center{
+  text-align: center; 
+  padding: 15px;
+}
+.container{
+  height: 100vh;
+}
+
 @media screen and (max-width: 1024px){
   h1{
     font-size:40px ;
@@ -81,12 +108,11 @@ p{
   .split{
     column-count: 1;
   }
-  .bodyIMG{
-    width: 90%;
-    border-radius:0px;
-  }
   .width-change{
     width: 90%;
     margin: auto;
+  }
+  .split-3{
+    column-count: 1;
   }
 }
